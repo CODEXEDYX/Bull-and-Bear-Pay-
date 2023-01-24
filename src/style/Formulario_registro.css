@@ -1,0 +1,157 @@
+
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for{
+position: fixed;
+z-index:100;
+top:0;
+left:0;
+right:0;
+bottom:0;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color:rgba(0, 0, 0, 0.51);
+width:100%;
+overflow-y:scroll;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for h2{
+font-weight: 600;
+color: #f8f9fa;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro{
+background: var(--bs-azul-rgba);
+padding:1.875rem;
+filter:drop-shadow(0 0 0.3em var(--bs-gris));
+border-radius:.625rem;
+display: grid;
+gap:.9375rem;
+border:.875rem ridge var(--bs-negro-oscuro);
+grid-template-areas:
+"texto texto"
+"nombre correo"
+"codigo_postal codigo_postal"
+"telefono telefono"
+"direcion ciudad"
+"contraseña contraseña";
+margin:1.25rem;
+}
+
+
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_boton,
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_terminos{
+grid-column:span 2;
+}
+
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .texto{
+grid-area:texto;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_nombre{
+grid-area:nombre;
+} 
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro_correo{
+grid-area:correo;
+} 
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_telefono{
+grid-area:telefono;
+} 
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_city{
+grid-area:ciudad;
+} 
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_codigo_postal{
+grid-area:codigo_postal;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_direcion{
+grid-area:direcion;
+} 
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_contraseña{
+grid-area:contraseña;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_input{
+width:100%;
+padding:.4375rem;
+border-radius:.5rem;
+color: var(--bs-gris);
+font-weight: 600;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto  .cont_for .formulario_registro .formulario_registro_label{
+display: block;
+padding-bottom:.3125rem;
+padding-top:.3125rem;
+cursor: pointer;
+color: var(--bs-blanco-claro);
+font-weight: 600;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_boton .boton_registro {
+background: var(--bs-azul);
+width:100%;
+padding:.625rem;
+color: var(--bs-blanco-claro);
+font-weight: 700;
+border-radius:.3125rem;
+overflow: hidden;
+position: relative;
+cursor: pointer;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_boton .boton_registro span{
+position: relative;
+z-index:2;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_boton .boton_registro::after{
+position: absolute;
+content:"";
+width:.0625rem;
+height:.0625rem;
+top:50%;
+left:50%;
+background: #01395d;
+z-index:1;
+border-radius:62.5rem;
+transition:all 0.5s ease;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_boton .boton_registro:hover::after{
+transform:scale(700);
+transition:all 0.8s ease;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_terminos{
+margin-bottom:.625rem;
+margin-top:.625rem;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_terminos .formulario_registro_label_terminos{
+color: var(--bs-blanco-claro);
+font-weight: 600;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .formulario_registro_terminos .formulario_registro_label_terminos span{
+color: var(--bs-azul);
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .caja_cerar{
+position: absolute;
+top:-1.5625rem;
+right:-1.875rem;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .caja_cerar img{
+width:3.125rem;
+cursor: pointer;
+}
+
+@media screen and (max-width:31.25rem) {
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro
+{
+grid-template-areas:
+"texto texto"
+"nombre nombre"
+"correo correo"
+"codigo_postal codigo_postal"
+"telefono telefono"
+"direcion direcion"
+"ciudad ciudad" 
+"contraseña contraseña";
+}
+}
+@media screen and (max-width:23.4375rem) {
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .formulario_registro .caja_cerar.cerar_media{
+position: absolute;
+top: inherit;
+left: inherit;
+bottom:-25px;
+right:-20px;
+}
+}

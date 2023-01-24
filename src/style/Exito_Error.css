@@ -1,0 +1,44 @@
+
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_exito .caja_exito,
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_error .caja_error{
+display: flex;
+background:var(--bs-rojo);
+padding:.6875rem;
+border-radius:.625rem;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_exito .caja_exito p,
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_error .caja_error p{
+color:var(--bs-blanco-claro);
+font-weight: 570;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_exito,
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_error {
+position:fixed;
+top:0;
+right:0;
+margin:1.4375rem;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_exito .caja_exito img,
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_error .caja_error img{
+margin-left:1.25rem;
+margin-right:.625rem;
+width:1.875rem;
+height:1.875rem;
+}
+
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_exito .caja_exito{
+background: var(--bs-verde-mer);
+}
+
+
+/* Fomulario registro */
+
+
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for  .cont_exito.left,
+main .contenedor_1 .caja_padre_1 .caja_texto .cont_for .cont_error.left{
+     top:0;
+     left:0;
+     position: fixed;
+     display:flex;
+     justify-content:flex-start;
+}

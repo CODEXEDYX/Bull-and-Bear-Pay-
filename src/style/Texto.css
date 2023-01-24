@@ -1,0 +1,28 @@
+main .contenedor_1 .caja_padre_1 .caja_texto{
+width:73%;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto p span{
+color: var(--bs-blanco-claro);
+cursor: pointer;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto p span:hover{
+text-decoration: underline;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto p{
+line-height:1.875rem;
+color:var(--bs-azul);
+font-weight: 600;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .caja_texto_parrafo{
+text-align: center;
+margin-top:1.875rem;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto h1{
+color: var(--bs-blanco-claro);
+font-weight: 600;
+text-align: center;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto h1,
+main .contenedor_1 .caja_padre_1 .caja_texto p{
+text-align: center;
+}

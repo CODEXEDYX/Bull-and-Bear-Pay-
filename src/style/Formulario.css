@@ -1,0 +1,123 @@
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario{
+background:#152b44;
+margin-top:-15.625rem;
+padding:1.875rem;
+filter:drop-shadow(0 0 1em #343a40 );
+border-radius:.625rem
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario span{
+position: relative;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario .caja_img_react h2{
+text-align: center;
+color:var(--bs-blanco-claro);
+font-weight: 700;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario .formulario_input{
+width:100%;
+padding:.5625rem;
+border-radius:.3125rem;
+color: var(--bs-gris);
+font-weight: 600;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario .formulario_label_input{
+display:flex;
+margin-top:.9375rem;
+margin-bottom:.9375rem;
+color: var(--bs-blanco-claro);
+font-weight: 600;
+cursor:pointer;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario .formulario_grupo_ajustes{
+display: flex;
+justify-content: space-between;
+margin-top:1.875rem;
+margin-bottom:1.875rem;
+margin-right:.625rem;
+margin-left:.625rem;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario .formulario_grupo_ajustes .formulario_label_checkbox{
+color: var(--bs-blanco-claro);
+font-weight: 600;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario .formulario_grupo_ajustes a{
+color:var(--bs-azul);
+font-weight: 600
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario button{
+background: var(--bs-azul);
+width:100%;
+padding:.625rem;
+color: var(--bs-blanco-claro);
+font-weight: 700;
+border-radius:.3125rem;
+overflow: hidden;
+position: relative;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario button span{
+position: relative;
+z-index:2;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario button::after{
+position: absolute;
+content:"";
+width:.0625rem;
+height:.0625rem;
+top:50%;
+left:50%;
+background: #01395d;
+z-index:1;
+border-radius:62.5rem;
+transition:all 0.5s ease;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario button:hover::after{
+transform:scale(1200);
+transition:all 0.8s ease;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario .boton_error_inico{
+opacity:0.8;
+cursor:not-allowed;
+background: var(--bs-rojo);
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario .boton_error_inico::after{
+content:inherit;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario .terminos{
+display: flex;
+justify-content:space-around;
+margin-left:.625rem;
+margin-top:4.375rem;
+margin-right:.625rem;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario .terminos a{
+margin:1.25rem;
+color: var(--bs-blanco-claro);
+font-weight: 600;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario .caja_img_react{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario  .caja_img_react img{
+margin-bottom:.3125rem;
+margin-top:1.875rem;
+}
+main .contenedor_1 .caja_padre_1 .caja_texto .formulario .formulario_input.error_inicio_input{
+opacity:0.9;
+cursor: not-allowed;
+}
+
+@keyframes react {
+from{
+transform: rotate(0);
+}
+to{
+transform: rotate(360deg);
+}
+}
+@media(prefers-reduced-motion:no-preference) {
+.img_react{
+animation: react infinite 5s linear;
+}
+}
